@@ -1,0 +1,280 @@
+<% include ./partials/header.ejs %>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbars h-2px bg-zinc-800">
+            <ul class="nav-links px-20">
+                <li><a class="text-zinc-300" href="#">Help</a></li>
+                <li><a class="text-zinc-300" href="#">Query & Feedback</a></li>
+            </ul>
+        </nav>
+
+        <nav class="navbar bg-zinc-0 shadow-2xl flex justify-between items-center px-4">
+            <div class="logo font-semibold flex items-center h-10 text-lime-700">
+                <a href="#" class="flex items-center">
+                    <img class="w-12 h-12 mr-1"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgOjwBh_ZhxOY3Z6G0cAyyjU-p2Fs3rbot1A&s"
+                        alt="WMGMT Web Logo">
+                    <span class="mt-1">WMGMT Web</span>
+                </a>
+            </div>
+
+            <ul class="nav-links flex space-x-4 text-zinc-700 font-sans">
+                <li><a href="#"><b>Home</b></a></li>
+                <li><a href="#"><b>Request</b></a></li>
+                <li><a href="/logout" class="btn-green text-semibold">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content: Video Cards Section -->
+        <div class="container mx-auto p-10">
+            <h2 class="text-2xl font-bold text-gray-700 mb-6">Here are some videos on Management of Plastic Waste</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Video 1 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/8lhbU6aO_FA/hqdefault.jpg" alt="Plastic Waste Management">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Plastic Waste Management: Challenges & Solutions
+                        </h3>
+                        <p class="text-sm text-gray-600 mt-2">Explore various methods to tackle the challenges posed by
+                            plastic waste in urban areas.</p>
+                        <a href="https://youtu.be/8lhbU6aO_FA?si=CyAIEfUoSK3ef73J"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/f2ZT9Q71ph4/hqdefault.jpg"
+                            alt="Innovative Recycling Techniques">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Innovative Recycling Techniques for Plastic
+                            Waste</h3>
+                        <p class="text-sm text-gray-600 mt-2">Learn about groundbreaking recycling technologies that are
+                            shaping the future of plastic waste management.</p>
+                        <a href="https://youtu.be/f2ZT9Q71ph4?si=l9QWs6GRASBSTGwD"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/Z4KB9eFQtVg/hqdefault.jpg" alt="Zero-Waste Initiatives">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Zero-Waste Initiatives for a Sustainable Future
+                        </h3>
+                        <p class="text-sm text-gray-600 mt-2">Discover how zero-waste movements are reducing plastic
+                            waste and promoting sustainability.</p>
+                        <a href="https://youtu.be/Z4KB9eFQtVg?si=VSrIqK98A-rGXJJz"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/VjKRPOUMu-8/hqdefault.jpg" alt="Global Plastic Crisis">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">The Global Plastic Crisis: An Urgent Call to
+                            Action</h3>
+                        <p class="text-sm text-gray-600 mt-2">Understand the gravity of the global plastic crisis and
+                            what we can do to mitigate it.</p>
+                        <a href="https://youtu.be/VjKRPOUMu-8?si=MVuzTa316MMw2k-1"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+                <!-- Video 5 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/P7-aHWISaZ4/hqdefault.jpg" alt="Plastic in Oceans">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Plastic in Oceans: Consequences and Solutions
+                        </h3>
+                        <p class="text-sm text-gray-600 mt-2">A deep dive into how plastic pollution is affecting marine
+                            life and what can be done to stop it.</p>
+                        <a href="https://youtu.be/P7-aHWISaZ4?si=zyXQWHCmx6Gy9DJr"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+                <!-- Video 6 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/l3XPe3oUEYw/hqdefault.jpg"
+                            alt="Circular Economy for Plastics">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">The Circular Economy for Plastics</h3>
+                        <p class="text-sm text-gray-600 mt-2">An in-depth look at how a circular economy model can
+                            transform the plastic waste industry.</p>
+                        <a href="https://youtu.be/l3XPe3oUEYw?si=6uE-RguUGcJ-qc7h"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+                <!-- Video 7 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/yS_DSTHLwKo/hqdefault.jpg" alt="Biodegradable Plastics">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Biodegradable Plastics: A Hope or a Myth?</h3>
+                        <p class="text-sm text-gray-600 mt-2">Explore whether biodegradable plastics are a viable
+                            solution or just another myth in waste management.</p>
+                        <a href="https://youtu.be/yS_DSTHLwKo?si=sExo7wjz2b20jmjf"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+                <!-- Video 8 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/W4YHOfqiCKc/hqdefault.jpg"
+                            alt="Plastic Waste and Climate Change">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">The Link Between Plastic Waste and Climate
+                            Change</h3>
+                        <p class="text-sm text-gray-600 mt-2">How does plastic waste contribute to climate change? Find
+                            out in this insightful video.</p>
+                        <a href="https://youtu.be/W4YHOfqiCKc?si=gbRIlUttAyk6hwuy"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+                <!-- Video 9 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/Ep8WChKNfwA/hqdefault.jpg"
+                            alt="Recycling Plastic Packaging">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Recycling Plastic Packaging: Is it Really
+                            Possible?</h3>
+                        <p class="text-sm text-gray-600 mt-2">Dive into the complexities of recycling plastic packaging
+                            and how effective current methods are.</p>
+                        <a href="https://youtu.be/Ep8WChKNfwA?si=HVnFgVZoL2rHwZxg"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+                <!-- Video 10 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/vPmJHjms8B0/hqdefault.jpg"
+                            alt="Reducing Plastic Waste at Source">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Reducing Plastic Waste at the Source</h3>
+                        <p class="text-sm text-gray-600 mt-2">Learn how reducing plastic production and consumption is
+                            key to solving the plastic waste crisis.</p>
+                        <a href="https://youtu.be/vPmJHjms8B0?si=yKqV7SiU5CsgbgV7"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+                <!-- Video 11 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/KZb34tTNzCU/hqdefault.jpg"
+                            alt="Plastic Bans: Are They Effective?">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Plastic Bans: Are They Effective?</h3>
+                        <p class="text-sm text-gray-600 mt-2">A critical look at plastic bans around the world and
+                            whether they are making a difference.</p>
+                        <a href="https://youtu.be/KZb34tTNzCU?si=KhXeyLxGKNu82ox_"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+                <!-- Video 12 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/DblRoNnhgJY/hqdefault.jpg" alt="Plastic Recycling Programs">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Plastic Recycling Programs: Success Stories</h3>
+                        <p class="text-sm text-gray-600 mt-2">Explore some of the most successful plastic recycling
+                            programs around the world.</p>
+                        <a href="https://youtu.be/DblRoNnhgJY?si=cyCpx7adP93LBSe7"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+                <!-- Video 13 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/nwG6D0JOQmo/hqdefault.jpg" alt="Plastic Waste in Landfills">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Plastic Waste in Landfills: A Growing Problem
+                        </h3>
+                        <p class="text-sm text-gray-600 mt-2">How plastic waste is overwhelming landfills and what we
+                            can do about it.</p>
+                        <a href="https://youtu.be/nwG6D0JOQmo?si=_8PoSd-JWjMcmBph"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+                <!-- Video 14 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/HRHzPGzG5Wk/hqdefault.jpg"
+                            alt="Plastic Waste and Microplastics">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Plastic Waste and Microplastics</h3>
+                        <p class="text-sm text-gray-600 mt-2">The hidden dangers of microplastics and their impact on
+                            human health and the environment.</p>
+                        <a href="https://youtu.be/HRHzPGzG5Wk?si=VCjq3Zgg10opASvx"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+                <!-- Video 15 -->
+                <div class="video-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="thumbnail w-full h-56 bg-gray-200">
+                        <img class="w-full h-full object-cover"
+                            src="https://img.youtube.com/vi/nXIGVRI7PPY/hqdefault.jpg"
+                            alt="The Future of Plastic Waste Management">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">The Future of Plastic Waste Management</h3>
+                        <p class="text-sm text-gray-600 mt-2">What does the future hold for plastic waste management,
+                            and how can we be part of the solution?</p>
+                        <a href="https://youtu.be/nXIGVRI7PPY?si=GzKOrqRmQXepGy4b"
+                            class="block mt-4 text-blue-500 font-semibold">Watch Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <% include ./partials/footer.ejs %>
+    </body>

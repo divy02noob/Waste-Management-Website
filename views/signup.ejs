@@ -1,0 +1,30 @@
+<%- include('./partials/header.ejs') %>
+
+    <div class=" background w-full h-screen bg-zinc-700 flex items-center justify-center">
+        <div class="w-[25vw] h-[68vh] bg-white px-20 py-10 rounded-md" style=" box-shadow:20px 20px 10px black;">
+            <h1 class="text-3xl text-center font-semibold text-zinc-700 leading-none tracking-tighter capitalize">
+            Register in WMGMT Web</h1>
+            <form action="/signup" method="post">
+                <input class="block border-2 rounded-[10px] mt-2 w-full px-3 py-1" type="text" name="username"
+                    placeholder="username">
+                <input class="block border-2 rounded-[10px] mt-2 w-full px-3 py-1" type="text" name="fullname" placeholder="full name">
+                <input class="block border-2 rounded-[10px] mt-2 w-full px-3 py-1" type="email" name="email" placeholder="email">
+                <input class="block border-2 rounded-[10px] mt-2 w-full px-3 py-1" type="number" name="contact" placeholder="contact">
+                <input class="block border-2 rounded-[10px] mt-2 w-full px-3 py-1" type="password" name="password"
+                    placeholder="password">
+                <input class="block border-2 rounded-[10px] mt-2 w-full px-3 py-1" type="text" name="role" placeholder="role">
+                <input class="block border-2 rounded-full mt-2 w-full px-3 py-2 text-white rounded-md"
+                    style="background-color:#47ad10;" type="submit" value="Signup">
+                <p class="text-xs mt-2 text-zinc-600 mt-3  w-7/8 mx-auto text-center">By continuing, you agree to
+                    WMGMT Web's
+                    <b>Terms of Service</b>
+                    and acknowledge you've read our
+                    <b>Privacy Policy
+                        .
+                        Notice at collection
+                        .</b>
+                </p>
+            </form>
+        </div>
+    </div>
+<%- include('./partials/footer.ejs') %>

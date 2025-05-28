@@ -1,0 +1,96 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar { 
+  position:sticky;
+  top:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.navbars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #34C759;
+}
+
+.logo img {
+  vertical-align: middle;
+  margin-right: 2px;
+  margin-bottom:5px;
+  /* space between logo and text */
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #47ad10;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  transition: color 0.3s;
+} 
+
+.nav-links li a:hover {
+  color: #55efc4;
+}
+.background {
+  background: linear-gradient(rgba(0, 0,0, 0.4), rgb(0, 0,0, 0.4)), url('https://images.unsplash.com/photo-1712419020105-2e75a1fc3bd3?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+.btn-green {
+  background-color: #47ad10;
+  /* or any other green color you prefer */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-green:hover {
+  background-color: #47ad10;
+  /* or any other darker green color you prefer */
+}
+.shadow{
+  background-size: cover;
+    height: 600px ;
+    width: 100%;
+    background-color:#47ad10;
+
+}
+
+/* add media queries to make it responsive */
+@media only screen and (max-width: 768px) {
+  .background {
+    height: 50vh;
+    /* adjust the height for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .background {
+    height: 30vh;
+    /* adjust the height for even smaller screens */
+  }
+}

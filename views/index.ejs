@@ -1,0 +1,36 @@
+<%- include('./partials/header.ejs') %>
+
+<body>
+  <nav class="navbars h-2px bg-zinc-900">
+    <ul class="nav-links px-20">
+      <li><a class="text-zinc-300"href="#">Help</a></li>
+      <li><a class="text-zinc-300"href="#">Query&Feedback</a></li>
+    </ul>
+  </nav>
+  <nav class="navbar bg-white backdrop-filter backdrop-blur-md shadow-2xl">
+    <div class="logo font-semibold flex items-center h-10 text-lime-700 ">
+      <a href="#" class="flex items-center">
+        <img class="w-12 h-12 mr-1"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgOjwBh_ZhxOY3Z6G0cAyyjU-p2Fs3rbot1A&s">
+        <span class="mt-1">WMGMT Web</span>
+      </a>
+    </div>
+    <ul class="nav-links text-zinc-700 font-sans px-2">
+      <li clas=""><a href="#"><b>Home</b></a></li>
+      <li clas=""><a href="#"><b>Request</b></a></li>
+      <li clas=""><a href="/login" class="btn-green text-semibold">Login</a></li>
+      <li clas=""><a href="/signup" class="btn-green text-semibold mr-0">Signup</a></li>
+
+    </ul>
+  </nav>
+  <div class="background flex justify-center text-bold items-center px-20 text-semibold text-zinc-100 flex-col shadow-2xl">
+    <h1 class="text-6xl font-bold strokeme">Get Complete Waste Management Solutions</h1>
+    <h2 class="text-lg font-bold strokeme">A Startup Idea by Divyansh Srivastava</h2>
+  </div>
+  <div class="shadow">
+    <h1 class="text-5xl text-zinc-100 font-semibold flex flex-col items-start pl-4">
+      <span>Services We</span>
+      <span class="text-zinc-100 font-semibold">offer</span>
+    </h1>
+  </div>
+  <%- include('./partials/footer.ejs') %>
